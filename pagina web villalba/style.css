@@ -1,0 +1,292 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Fira+Sans:wght@500;800&family=Lora&family=Ubuntu&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Fira+Sans:wght@500;800&family=Gabarito&family=Lora&family=Ubuntu&display=swap');
+*{
+    font-family: 'Gabarito';
+
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    animation: fadeIn 1s ease-out forwards;
+    
+    
+    
+    
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    
+}
+.menu{
+    position: sticky;
+    top: 0px;
+}
+
+header{
+    font-family: 'Dela Gothic One', cursive;
+    background-color: rgb(24, 24, 24);
+    color: rgb(245, 245, 245);
+    font-size: 2em;
+    padding: 0.5em;
+    text-align: center;
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.title{
+    font-family: 'Dela Gothic One';
+    text-align: center;
+    margin: auto;
+}
+
+nav{
+    position: sticky;
+    top: 0px;
+    list-style: none;
+    display: flex;
+    background-color: rgb(24, 24, 24);
+    color: rgb(245, 245, 245);
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    background-color: rgb(24, 24, 24);
+    margin: auto;
+}
+
+nav ul li{
+    padding: 1em;
+}
+
+nav ul li:hover{
+    cursor: pointer;
+    background-color: rgb(95, 41, 221);
+}
+
+.productos{
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+#coca{
+    width: 11em;
+}
+
+.producto{
+    
+    flex-direction: row;
+    border: 1px solid rgb(201, 201, 201);
+    padding: 0.5em;
+    border-radius: 1em;
+}
+
+.producto img{
+    cursor: pointer;
+}
+
+.container .productos p{
+    width: 10em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0.5em; 
+}
+.botones{
+    display: flex;
+    border-radius: 1em;
+    justify-content: space-around;
+    margin: 0.5em 0em;
+    
+}
+.botones .agregar{
+    border-radius: 1em;
+    border: 0px;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    padding: 0.4em 1em;
+    font-size: medium;
+}
+.botones .masmenos{
+    border-radius: 1em;
+    border: 0px;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    padding: 4px 10px;
+    font-size: large;
+}
+
+.botones .agregar:hover{
+    background-color: rgb(95, 41, 221);
+    cursor: pointer;
+}
+
+.botones .masmenos:hover{
+    background-color: rgb(95, 41, 221);
+    cursor: pointer;
+}
+
+h3{
+    margin: 0.5em;
+}
+
+.container-sobrenosotros{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    text-align: center; 
+}
+
+.juanymasi{
+    margin: auto;
+    border-radius: 100em;
+    width: 40%;
+    margin-top: 3em;
+}
+
+.texto-sobrenosotros{
+    margin: auto;
+    margin-left: 2em;
+    text-align: center;
+}
+
+.titulo-sobrenosotros{
+    font-family: 'Dela Gothic One';
+    font-size: x-large;
+}
+
+.descripcion-sobrenosotros{
+    font-size: larger;
+    margin-top: 1em;
+}
+.container-contactos{
+    font-size: 20px;
+    
+    width: 80%;
+    margin: auto;
+    margin-top: 2em;
+    
+}
+.imgcontactos{
+    width: 2em;
+    margin: 1em;
+    
+}
+
+.whatsapp{
+    font-family: 'Dela Gothic One';
+    display: flex;
+    align-items: center;
+    color: green;
+}
+.contentcontactos{
+    margin: 0em 0.5em;
+    color: black;
+}
+.mail{
+    font-family: 'Dela Gothic One';
+    display: flex;
+    align-items: center;
+    color: brown;
+}
+.instagram{
+    font-family: 'Dela Gothic One';
+    display: flex;
+    align-items: center;
+    color: rgb(152, 19, 182);
+}
+
+#comentario{
+    margin-top: 2em;
+    font-size: large;
+    border-radius: 1em;
+    padding: 0.2em 1em;
+    border: 0.1em solid;
+   
+}
+.container-sucursales{
+    width: 80%;
+    margin: auto;
+    margin-top: 5em;
+    display: flex;
+    font-size: large;
+
+}
+
+.container-sucursales ul li{
+    list-style: none;
+    margin-top: 1.5em;
+    font-size: larger;
+    text-decoration: underline;
+}
+
+.imagen-quilmes{
+    margin-left: 10em;
+    
+}
+.imagen-quilmes img{
+    border-radius: 5em;
+    box-shadow: 5px 5px 2px;
+}
+footer{
+    background-color: rgb(152, 19, 182);
+    padding: 0.3em;
+    text-align: center;
+    margin-top: 2em;
+    color: white;
+    
+
+}
+@media (max-width: 1000px){
+    .productos{
+        margin-top: 0em;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .producto{
+        margin: auto;
+        margin-top: 1.5em;
+    }
+    .container-sobrenosotros{
+        flex-direction: column;
+    }
+    .texto-sobrenosotros{
+        margin-top: 2em;
+    }
+
+    .container-sucursales{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .imagen-quilmes img{
+        width: 20em;
+    }
+
+    .imagen-quilmes{
+        margin: 0px;
+        margin-top: 1em;
+    }
+
+
+
+}
